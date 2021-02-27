@@ -8,36 +8,36 @@ r = (255, 0, 0)
 y = (255, 255, 0)
 
 scissors = [
-   y, y, y, y, y, y, r, y,
-   r, r, y, y, y, r, y, y,
-   r, r, y, y, r, y, y, y,
-   y, y, r, r, y, y, y, y,
-   y, y, r, r, y, y, y, y,
-   r, r, y, y, r, y, y, y,
-   r, r, y, y, y, r, y, y,
-   y, y, y, y, y, y, r, y
+   e, e, e, e, e, e, r, e,
+   r, r, e, e, e, r, e, e,
+   r, r, e, e, r, e, e, e,
+   e, e, r, r, e, e, e, e,
+   e, e, r, r, e, e, e, e,
+   r, r, e, e, r, e, e, e,
+   r, r, e, e, e, r, e, e,
+   e, e, e, e, e, e, r, e
 ]
 
 paper = [
-   y, y, y, y, y, y, y, y,
-   y, y, y, y, y, y, y, y,
-   y, y, y, y, y, y, y, y,
-   y, y, y, y, y, y, y, y,
-   y, r, r, r, r, r, r, y,
-   y, y, y, y, y, y, y, y,
-   y, y, y, y, y, y, y, y,
-   y, y, y, y, y, y, y, y,
+   e, e, e, e, e, e, e, e,
+   e, e, e, e, e, e, e, e,
+   e, e, e, e, e, e, e, e,
+   e, e, e, e, e, e, e, e,
+   e, r, r, r, r, r, r, e,
+   e, e, e, e, e, e, e, e,
+   e, e, e, e, e, e, e, e,
+   e, e, e, e, e, e, e, e
 ]
 
 rock = [
-   y, y, y, y, y, y, y, y,
-   y, y, y, r, y, y, y, y,
-   y, y, r, r, r, r, y, y,
-   y, y, r, r, r, r, r, y,
-   y, r, r, r, r, r, y, y,
-   y, r, r, r, r, r, y, y,
-   y, y, r, r, r, y, y, y,
-   y, y, y, y, y, y, y, y,
+   e, e, e, e, e, e, e, e,
+   e, e, e, r, e, e, e, e,
+   e, e, r, r, r, r, e, e,
+   e, e, r, r, r, r, r, e,
+   e, r, r, r, r, r, e, e,
+   e, r, r, r, r, r, e, e,
+   e, e, r, r, r, e, e, e,
+   e, e, e, e, e, e, e, e
 ]
 
 
