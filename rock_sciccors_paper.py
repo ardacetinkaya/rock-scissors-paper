@@ -105,6 +105,7 @@ def main():
           hat.clear()
           print('This round is completed. Press up to play again.')
         else:
+          print("Terminating application, please wait...")
           sys.exit(0)
 
 
