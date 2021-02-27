@@ -40,6 +40,17 @@ rock = [
    e, e, e, e, e, e, e, e
 ]
 
+go = [
+   e, e, e, e, e, e, e, e,
+   e, e, e, e, e, e, e, e,
+   e, r, r, e, e, e, r, e,
+   r, e, e, e, e, r, e, r,
+   r, e, r, r, e, r, e, r,
+   r, e, e, r, e, r, e, r,
+   e, r, r, e, e, e, r, e,
+   e, e, e, e, e, e, e, e
+]
+
 
 options =dict([('paper',paper), ('scissors',scissors), ('rock', rock)])
 hat = SenseHat()
@@ -49,7 +60,10 @@ def startCountDown(f):
       print(str(i))
       hat.show_letter(str(i),r)
       sleep(0.5)
+    hat.clear()
+    hat.set_pixels(go)
     print('GO!!!')
+    sleep(0.75)
 
 def playRockSciccorsPaper(times):
   for i in range(times,0,-1):
