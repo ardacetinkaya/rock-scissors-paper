@@ -3,8 +3,8 @@
 ![raspberrypi-0](https://user-images.githubusercontent.com/4550197/109418818-540f0000-79db-11eb-9772-edd4125776b7.gif)
 
 This is a simple try and learn demonstration project for some topics such as;
-- Raspberry PI - Single-board small computer
-- Raspberry PI Sense Hat - Add-on board for Raspberry PI to have some sensors and LED
+- Raspberry Pi - Single-board small computer
+- Raspberry Pi Sense Hat - Add-on board for Raspberry PI to have some sensors and LED
 - Machine Learning
     - Lobe - Machine Learning Tool to train and generate models - https://lobe.ai/
     - Tensorflow
