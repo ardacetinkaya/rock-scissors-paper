@@ -1,6 +1,7 @@
 from time import sleep
 from sense_hat import SenseHat
 import random
+import os
 import sys
 import time
 from PIL import Image
@@ -99,19 +100,25 @@ def startCountDown(_from, _round):
     print('GO!!!')
 
 def playRockSciccorsPaper(_times, _model):
-  for i in range(_times,0,-1):
+  for i in range(_times, 0, -1):
     sleep(0.5)
     HAT.clear()
     startCountDown(3,i)
-    sleep(0.75)
+    sleep(0.5)
     key, value = random.choice(list(OPTIONS.items()))
-    print("PI\'s choice is {choice}".format(choice=key))
+
     s, image = CAM.read()
-    cv2.imwrite("capture_{index}.jpg".format(index=i),image)
+    fileName = "capture_{index}.jpg".format(index=i)
+    cv2.imwrite(fileName,image)
     sleep(0.15)
-    result = _model.predict_from_file("capture_"+str(i)+".jpg")
+    result = _model.predict_from_file(fileName)
+
+    print("PI\'s choice is {choice}".format(choice=key))
     print("Your choice is {choice}".format(choice=result.prediction))
     
+    if os.path.exists(fileName):
+      os.remove(fileName)
+
     HAT.set_pixels(value)
     sleep(0.50)
     _didYouWin = didYouWin(result.prediction, key)
@@ -152,9 +159,6 @@ def main():
         else:
           print("Terminating application, please wait...")
           sys.exit(0)
-
-
-
 
 if __name__ == "__main__":
     main()
